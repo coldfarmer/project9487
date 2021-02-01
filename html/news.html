@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <title>Portal.com</title>
+    <link href="../css/news.css" rel="stylesheet">
+
+    <!-- owl.carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"></link>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- ---my--- -->
+    <script src=../js/flitter.js></script>
+    <script src="../js/staytop.js"></script>
+    <link href="../css/hamber.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="top_list" id="top_list">
+      <nav role="navigation">
+        <div id="menuToggle">
+          <!--
+          A fake / hidden checkbox is used as click reciever,
+          so you can use the :checked selector on it.
+          -->
+          <input type="checkbox" />
+          
+          <!--
+          Some spans to act as a hamburger.
+          
+          They are acting like a real hamburger,
+          not that McDonalds stuff.
+          -->
+          <span></span>
+          <span></span>
+          <span></span>
+          
+          <!--
+          Too bad the menu has to be inside of the button
+          but hey, it's pure CSS magic.
+          -->
+          <ul id="menu">
+            <li class=store>
+              <a href="store.html" style="text-decoration:none;">商店</a>
+            </li>
+            <li class=news>
+              <a href="news.html" style="text-decoration:none;">最新消息</a>
+            </li>
+            <li class=talkplace>
+              <a href="" style="text-decoration:none;">討論區</a>
+            </li>
+            <li class=aboutus>
+              <a href="about_us.html" style="text-decoration:none;">關於我們</a>
+            </li>
+            <li class=serverce>
+              <a href="" style="text-decoration:none;">客服支援</a>
+            </li>
+            <li class=login>
+              <a href="acount.html" style="text-decoration:none;">登入</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container" id="container">
+        <div class="front_item">
+          <a href="home.html"><img src="../images/logo_3.png"></a>
+          <ul>
+            <li class=store>
+              <a href="store.html" style="text-decoration:none;">商店</a>
+            </li>
+            <li class=news>
+              <a href="news.html" style="text-decoration:none;">最新消息</a>
+            </li>
+            <li class=talkplace>
+              <a href="" style="text-decoration:none;">討論區</a>
+            </li>
+            <li class=aboutus>
+              <a href="about_us.html" style="text-decoration:none;">關於我們</a>
+            </li>
+            <li class=serverce>
+              <a href="" style="text-decoration:none;">客服支援</a>
+            </li>
+            <li class=login>
+              <a href="acount.html" style="text-decoration:none;">登入</a>
+            </li>
+          </ul>
+        </div>
+        <div class="behind_item">
+          <div class="search">
+            <img src="../images/icon_search.png">
+            <input type="text" placeholder=" 請輸入要搜尋的遊戲......" >
+          </div>
+          <div class="shopping_car">
+            <a><img src="../images/icon_soppingcar.png"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="news_large">
+      <div class="news_inside">
+       
+          <div class="title_news_large">
+            最新消息
+          </div>
+          <div class='owl-carousel owl-theme'>
+          <div class=item_news>
+            <div class="item_news_large">
+              <img src="../images/news_fallguys.png">
+              <div class="text">迎接耶誕《糖豆人：終極淘汰賽》公開溫馨同樂影片 限時推出免費佳節造型</div>
+            </div>
+          </div>  
+          <div class=item_news>
+            <div class="item_news_large">
+              <img src="../images/news_valleys.png">
+              <div class="text">《星露谷物語》PC 版今日釋出 1.5 版免費大更新 開放全新區域、新農場</div>
+            </div>
+          </div> 
+          <div class=item_news>  
+            <div class="item_news_large">
+              <img src="../images/news_warhorse.png">
+              <div class="text">《烈火戰馬》開發商打造、線上戰爭沙盒遊戲新作《帝國神話》曝光</div>
+            </div>
+          </div>  
+          <div class=item_news> 
+            <div class="item_news_large">
+              <img src="../images/news_potatal.png">
+              <div class="text">《冒險之旅：十字軍東征》更新新模式「混沌之地」</div>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+    <!-- <div class="news_empty"></div> -->
+    <div class="news_small">
+      <div class="news_today">
+        <div class="news_title">
+        
+        </div>
+        <div class="item_news_small">
+          <div class="item_img">
+            <img src="../images/item_mincraft.png">
+          </div>
+          <div class="iten_word">
+            <div class="item_title">
+              《我的世界》中國版代理商網易控告《迷你世界》、《奶塊》侵權 法院一審勝訴
+            </div>
+            <div class="item_time">
+              <a class="item_time_label">新聞 | </a>
+              <a class="item_time_time">今天: 10點 21分</a>
+            </div>
+            <div class="item_text">
+              <a> 《我的世界 Minecraft 》中國版代理商網易今日發表公告，針對兩款與《我的世界》概念相似的中國遊戲作品《迷你世界》、《奶塊》說明訴訟進度，根據公告中指出法院已經做出一審判決，《迷你世界》應立即停止侵權行為，《奶塊》也應刪除遊戲與宣傳全部侵權畫面。</a>
+            </div>
+           
+          </div>
+          <div class="item_icon">
+            <div class="item_icon_nice">
+              <img src="../images/icon-nice.png">
+              <a>1199<a>
+            </div>
+            <div class="item_icon_talk">
+              <img src="../images/icon-talk.png">
+              <a> 281</a>
+            </div>
+
+          </div>
+        </div>
+        <div class="item_news_small">
+          <div class="item_img">
+            <img src="../images/item_mincraft.png">
+          </div>
+          <div class="iten_word">
+            <div class="item_title">
+              《我的世界》中國版代理商網易控告《迷你世界》、《奶塊》侵權 法院一審勝訴
+            </div>
+            <div class="item_time">
+              <a class="item_time_label">新聞 | </a>
+              <a class="item_time_time">今天: 10點 21分</a>
+            </div>
+            <div class="item_text">
+              <a> 《我的世界 Minecraft 》中國版代理商網易今日發表公告，針對兩款與《我的世界》概念相似的中國遊戲作品《迷你世界》、《奶塊》說明訴訟進度，根據公告中指出法院已經做出一審判決，《迷你世界》應立即停止侵權行為，《奶塊》也應刪除遊戲與宣傳全部侵權畫面。</a>
+            </div>
+           
+          </div>
+          <div class="item_icon">
+            <div class="item_icon_nice">
+              <img src="../images/icon-nice.png">
+              <a>1199<a>
+            </div>
+            <div class="item_icon_talk">
+              <img src="../images/icon-talk.png">
+              <a> 281</a>
+            </div>
+
+          </div>
+        </div>
+        <div class="item_news_small">
+          <div class="item_img">
+            <img src="../images/item_mincraft.png">
+          </div>
+          <div class="iten_word">
+            <div class="item_title">
+              《我的世界》中國版代理商網易控告《迷你世界》、《奶塊》侵權 法院一審勝訴
+            </div>
+            <div class="item_time">
+              <a class="item_time_label">新聞 | </a>
+              <a class="item_time_time">今天: 10點 21分</a>
+            </div>
+            <div class="item_text">
+              <a> 《我的世界 Minecraft 》中國版代理商網易今日發表公告，針對兩款與《我的世界》概念相似的中國遊戲作品《迷你世界》、《奶塊》說明訴訟進度，根據公告中指出法院已經做出一審判決，《迷你世界》應立即停止侵權行為，《奶塊》也應刪除遊戲與宣傳全部侵權畫面。</a>
+            </div>
+           
+          </div>
+          <div class="item_icon">
+            <div class="item_icon_nice">
+              <img src="../images/icon-nice.png">
+              <a>1199<a>
+            </div>
+            <div class="item_icon_talk">
+              <img src="../images/icon-talk.png">
+              <a> 281</a>
+            </div>
+
+          </div>
+        </div>
+        <div class="item_news_small">
+          <div class="item_img">
+            <img src="../images/item_mincraft.png">
+          </div>
+          <div class="iten_word">
+            <div class="item_title">
+              《我的世界》中國版代理商網易控告《迷你世界》、《奶塊》侵權 法院一審勝訴
+            </div>
+            <div class="item_time">
+              <a class="item_time_label">新聞 | </a>
+              <a class="item_time_time">今天: 10點 21分</a>
+            </div>
+            <div class="item_text">
+              <a> 《我的世界 Minecraft 》中國版代理商網易今日發表公告，針對兩款與《我的世界》概念相似的中國遊戲作品《迷你世界》、《奶塊》說明訴訟進度，根據公告中指出法院已經做出一審判決，《迷你世界》應立即停止侵權行為，《奶塊》也應刪除遊戲與宣傳全部侵權畫面。</a>
+            </div>
+           
+          </div>
+          <div class="item_icon">
+            <div class="item_icon_nice">
+              <img src="../images/icon-nice.png">
+              <a>1199<a>
+            </div>
+            <div class="item_icon_talk">
+              <img src="../images/icon-talk.png">
+              <a> 281</a>
+            </div>
+
+          </div>
+        </div>
+        <div class="item_news_small">
+          <div class="item_img">
+            <img src="../images/item_mincraft.png">
+          </div>
+          <div class="iten_word">
+            <div class="item_title">
+              《我的世界》中國版代理商網易控告《迷你世界》、《奶塊》侵權 法院一審勝訴
+            </div>
+            <div class="item_time">
+              <a class="item_time_label">新聞 | </a>
+              <a class="item_time_time">今天: 10點 21分</a>
+            </div>
+            <div class="item_text">
+              <a> 《我的世界 Minecraft 》中國版代理商網易今日發表公告，針對兩款與《我的世界》概念相似的中國遊戲作品《迷你世界》、《奶塊》說明訴訟進度，根據公告中指出法院已經做出一審判決，《迷你世界》應立即停止侵權行為，《奶塊》也應刪除遊戲與宣傳全部侵權畫面。</a>
+            </div>
+           
+          </div>
+          <div class="item_icon">
+            <div class="item_icon_nice">
+            <img src="../images/icon-nice.png">
+              <a>1199<a>
+            </div>
+            <div class="item_icon_talk">
+              <img src="../images/icon-talk.png">
+              <a> 281</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pagechage">
+        <ul class="pages">
+          <li><a href="#">«</a></li>
+          <li><a href="#" class='page_act'>1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">6</a></li>
+          <li><a href="#">7</a></li>
+          <li><a href="#">»</a></li>
+       </ul>
+      </div> 
+    </div>
+    <div class="empty">
+    </div>
+   
+    <div class="footer">
+      <div class="footer_area">
+        <div class="logo">
+          <img src="../images/logo_3.png">
+        </div>
+        <div class="text_all">
+          <div class="text_1">
+            <a>工作機會 | 關於客服支援 | 聯繫我們 | 媒體報導</a>
+          </div>
+          <div class="text_2">
+            <div class=text_2_in>
+              <span class="row_1">©2020 台商傳送門股份有限公司（portal games, INC.）版權所有。</span>
+              <span class="row_2">在此提及的所有商標是其各自所有人的財產。</span>
+              <span class="row_3">隱私 | 法律聲明 | 條款 | COOKIES</span>
+            </div>
+          </div>
+        </div>  
+        <div class="lang">
+          <div class="title_lang">
+            Language:
+          </div>
+          <div class="choose_lang">
+             繁體中文
+          </div>
+        </div>
+      <div>
+    </div>
+
+    <script>
+     
+        var owl = $('.owl-carousel');
+      
+        $(owl).owlCarousel({
+          loop: true, // 循環播放
+          margin: 1, // 外距 10px
+          mouseDrag:false,
+          nav: true,
+          dots:false,
+          responsive: {
+          
+            300: {
+            
+              items: 1// 螢幕大小為 600~1000 顯示 3 個項目
+            },
+            600: {
+                items: 2 // 螢幕大小為 0~600 顯示 1 個項目
+             },
+            767: {
+              items: 3// 螢幕大小為 600~1000 顯示 3 個項目
+            },
+            // 992: {
+            //   items: 4// 螢幕大小為 600~1000 顯示 3 個項目
+            // },
+            1000: {
+              items: 4 // 螢幕大小為 1000 以上 顯示 5 個項目
+            }
+          }
+        });
+        // window.onresize = function(){
+        //   owl.trigger('mouseDrag.carousel', [false]);
+        // }
+     
+    </script>
+    <!-- <script>  
+      $(document).ready(function(){ 
+          window.onresize = function(){
+          alert(document.body.clientWidth);
+          if(document.body.clientWidth<=768){
+            $('.news_inside').toggleClass('owl-carousel owl-theme');
+          }  
+        }
+      });  
+    </script>   -->
+  </body>
+</html>

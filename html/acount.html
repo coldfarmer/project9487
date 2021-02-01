@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <title>Portal.com</title>
+    <link href="../css/acount.css" rel="stylesheet">
+
+    <!-- owl.carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"></link>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+     <!-- ---my--- -->
+     <script src=../js/flitter.js></script>
+     <script src="../js/staytop.js"></script>
+     <link href="../css/hamber.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="top_list" id="top_list">
+      <nav role="navigation">
+        <div id="menuToggle">
+          <!--
+          A fake / hidden checkbox is used as click reciever,
+          so you can use the :checked selector on it.
+          -->
+          <input type="checkbox" />
+          
+          <!--
+          Some spans to act as a hamburger.
+          
+          They are acting like a real hamburger,
+          not that McDonalds stuff.
+          -->
+          <span></span>
+          <span></span>
+          <span></span>
+          
+          <!--
+          Too bad the menu has to be inside of the button
+          but hey, it's pure CSS magic.
+          -->
+          <ul id="menu">
+            <li class=store>
+              <a href="store.html" style="text-decoration:none;">商店</a>
+            </li>
+            <li class=news>
+              <a href="news.html" style="text-decoration:none;">最新消息</a>
+            </li>
+            <li class=talkplace>
+              <a href="" style="text-decoration:none;">討論區</a>
+            </li>
+            <li class=aboutus>
+              <a href="about_us.html" style="text-decoration:none;">關於我們</a>
+            </li>
+            <li class=serverce>
+              <a href="" style="text-decoration:none;">客服支援</a>
+            </li>
+            <li class=login>
+              <a href="acount.html" style="text-decoration:none;">登入</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container" id="container">
+        <div class="front_item">
+          <a href="home.html"><img src="../images/logo_3.png"></a>
+          <ul>
+            <li class=store>
+              <a href="store.html" style="text-decoration:none;">商店</a>
+            </li>
+            <li class=news>
+              <a href="news.html" style="text-decoration:none;">最新消息</a>
+            </li>
+            <li class=talkplace>
+              <a href="" style="text-decoration:none;">討論區</a>
+            </li>
+            <li class=aboutus>
+              <a href="about_us.html" style="text-decoration:none;">關於我們</a>
+            </li>
+            <li class=serverce>
+              <a href="" style="text-decoration:none;">客服支援</a>
+            </li>
+            <li class=login>
+              <a href="acount.html" style="text-decoration:none;">登入</a>
+            </li>
+          </ul>
+        </div>
+        <div class="behind_item">
+          <div class="search">
+            <img src="../images/icon_search.png">
+            <input type="text" placeholder=" 請輸入要搜尋的遊戲......" >
+          </div>
+          <div class="shopping_car">
+            <a><img src="../images/icon_soppingcar.png"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="acount_mid">
+      <div class="left_list" id="left_list">
+        <div class="total">
+          <img src="">
+          <a>帳號總覽</a>
+        </div>
+        <div class="detail">
+          <img src="">
+          <a>帳號詳細資料</a>
+        </div>
+        <div class="securty">
+          <img src="">
+          <a>安全設定</a>
+        </div>
+        <div class="private">
+          <img src="">
+          <a>隱私設定</a>
+        </div>
+        <div class="games">
+          <img src="">
+          <a>遊戲清單</a>
+        </div>
+        <div class="buy_history">
+          <img src="">
+          <a>購買紀錄</a>
+        </div>
+        <div class="download">
+          <img src="">
+          <a>下載遊戲</a>
+        </div>
+      </div>
+      <div class="ac_total">
+        <div class="title">
+          帳號總覽
+        </div>
+            <div class="acrow1">
+              <div class="number">
+                <div class=title_in>
+                  序號兌換
+                </div>
+                <div class="text_in">
+                  <div class="text_in_t">
+                    <input type="text" placeholder=" XXXX - XXXX - XXXX - XXXX" maxlength="12">
+                    <a>兌換序號</a>
+                  </div>
+                </div>
+              </div>
+         
+              <div class="point">
+                <div class=title_in>
+                  剩餘點數
+                </div>
+                <div class="text_in">
+                  <a>666 傳送門點數</a>
+                </div>
+              </div>
+            </div>
+            <div class="acrow2">
+              <div class="data">
+                <div class="title_in">
+                  基本資料
+                </div>
+                <div class="text_in">
+                  <table>
+                    <tr><td>姓名: </td></tr>
+                    <tr><td>ID :</td></tr>
+                    <tr><td>電子郵件 : </td></tr>
+                    <tr><td>電話 :</td></tr>
+                  </table>
+                </div>
+              </div>
+           
+              <div class="securty">
+                <div class="title_in">
+                  安全設定
+                </div>
+                <div class="text_in">
+                  <table>
+                    <tr>
+                      <td><img src="../images/icon-chaeck.png"></td>
+                      <td>已驗證電子郵電</td>
+                    </tr>
+                    <tr>
+                      <td><img src="../images/icon-chaeck.png"></td>
+                      <td>已綁定電話</td>
+                    </tr>
+                    <tr>
+                      <td><img src="../images/icon-chaeck.png"></td>
+                      <td>已綁定驗證器</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>  
+    
+        <table class="acrow3">
+          <tr><td>
+            <div class="game_list">
+                <div class="title_in">
+                  遊戲清單
+                </div>
+                <div class="text_in">
+                  <table RULES=ROWS>
+                    <tr>
+                      <td><div class="l_name">世紀帝國3</div></td>
+                      <td><div class="l_download">已下載 :  1 次</div></td>
+                      <td><div class="l_time">上次遊戲時間 : 2020/12/11</div></td>
+                    </tr>
+                    <tr>
+                        <td><div="class=l_name">世紀帝國3</div></td>
+                        <td><div="class=l_download">已下載 :  1 次</div></td>
+                        <td><div="class=l_time">上次遊戲時間 : 2020/12/11</div></td>
+                    </tr>
+                    <tr>
+                      <td><div="class=l_name">世紀帝國3</div></td>
+                      <td><div="class=l_download">已下載 :  1 次</div></td>
+                      <td><div="class=l_time">上次遊戲時間 : 2020/12/11</div></td>
+                    </tr>
+                    <tr>
+                      <td><div="class=l_name">世紀帝國3</div></td>
+                      <td><div="class=l_download">已下載 :  1 次</div></td>
+                      <td><div="class=l_time">上次遊戲時間 : 2020/12/11</div></td>
+                    </tr>
+                    <tr>
+                      <td><div="class=l_name">世紀帝國3</div></td>
+                      <td><div="class=l_download">已下載 :  1 次</div></td>
+                      <td><div="class=l_time">上次遊戲時間 : 2020/12/11</div></td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+          </td></tr>
+          <tr><td>
+              <div class="buying_history">
+                <div class="title_in">
+                  購買紀錄
+                </div>
+                <div class="text_in">
+                  <table RULES=ROWS>
+                    <tr>
+                      <td><div class="l_date">世紀帝國3</div></td>
+                      <td><div class="l_name">購買金額 : NT 1000</div></td>
+                      <td><div class="l_price">2020 年 12 月 27日</div></td>
+                    </tr>
+                    <tr>
+                      <td><div class="l_date">世紀帝國3</div></td>
+                      <td><div class="l_name">購買金額 : NT 1000</div></td>
+                      <td><div class="l_price">2020 年 12 月 27日</div></td>
+                    </tr>
+                    <tr>
+                      <td><div class="l_date">世紀帝國3</div></td>
+                      <td><div class="l_name">購買金額 : NT 1000</div></td>
+                      <td><div class="l_price">2020 年 12 月 27日</div></td>
+                    </tr>
+                    <tr>
+                      <td><div class="l_date">世紀帝國3</div></td>
+                      <td><div class="l_name">購買金額 : NT 1000</div></td>
+                      <td><div class="l_price">2020 年 12 月 27日</div></td>
+                    </tr>
+                    <tr>
+                      <td><div class="l_date">世紀帝國3</div></td>
+                      <td><div class="l_name">購買金額 : NT 1000</div></td>
+                      <td><div class="l_price">2020 年 12 月 27日</div></td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+          </td><tr>
+        </table>
+      </div>
+    </div>
+    <div class="empty">
+    </div>
+    <div class="footer">
+      <div class="footer_area">
+        <div class="logo">
+          <img src="../images/logo_3.png">
+        </div>
+        <div class="text_all">
+          <div class="text_1">
+            <a>工作機會 | 關於客服支援 | 聯繫我們 | 媒體報導</a>
+          </div>
+          <div class="text_2">
+            <div class=text_2_in>
+              <span class="row_1">©2020 台商傳送門股份有限公司（portal games, INC.）版權所有。</span>
+              <span class="row_2">在此提及的所有商標是其各自所有人的財產。</span>
+              <span class="row_3">隱私 | 法律聲明 | 條款 | COOKIES</span>
+            </div>
+          </div>
+        </div>  
+        <div class="lang">
+          <div class="title_lang">
+            Language:
+          </div>
+          <div class="choose_lang">
+             繁體中文
+          </div>
+        </div>
+      <div>
+    </div>
+    <script>
+      $(document).ready(function(){
+        // alert();
+          var pos =  $('#left_list').offset();// offset() 獲得div1當前的位置，左上角座標(x,y)
+          // alert(pos);
+          var w=$(window).width();
+          
+            $(window).scroll(function () { //滾動條滾動事件
+              var w=$(window).width();
+
+              // alert(w);
+                // if ($(this).scrollTop() > pos.top ) {
+                //     $('#top_list').css('top', $(this).scrollTop() - pos.top);
+                // } else if ($(this).scrollTop() <=  pos.top ) {
+                //     $('#top_list').css('top',0).css('position', 'relative');
+                // }
+                if( w > 1200 | (w<899) ){ 
+                　if($(this).scrollTop() > 10){      
+                    $('#left_list').css('top', $(this).scrollTop());
+                  }else if ($(this).scrollTop() <= 10) {
+                    $('#left_list').css('top',$(this).scrollTop()).css('position', 'relative');
+                  }
+                }  
+            });
+          
+      });
+    </script>  
+  </body>
+</html>

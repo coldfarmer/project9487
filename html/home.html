@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv=”Content-Type” content=”text/html" charset="utf-8″> -->
+    <title>Portal.com</title>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- tweenmax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <!-- owl.carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"></link>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- my -->
+    <script src="../js/staytop.js"></script>
+    <link href="../css/home.css" rel="stylesheet">
+    <link href="../css/hamber.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="top_list" id="top_list">
+      <nav role="navigation">
+        <div id="menuToggle">
+          <!--
+          A fake / hidden checkbox is used as click reciever,
+          so you can use the :checked selector on it.
+          -->
+          <input type="checkbox" />
+          
+          <!--
+          Some spans to act as a hamburger.
+          
+          They are acting like a real hamburger,
+          not that McDonalds stuff.
+          -->
+          <span></span>
+          <span></span>
+          <span></span>
+          
+          <!--
+          Too bad the menu has to be inside of the button
+          but hey, it's pure CSS magic.
+          -->
+          <ul id="menu">
+            <li class=store>
+              <a href="store.html" style="text-decoration:none;">商店</a>
+            </li>
+            <li class=news>
+              <a href="news.html" style="text-decoration:none;">最新消息</a>
+            </li>
+            <li class=talkplace>
+              <a href="" style="text-decoration:none;">討論區</a>
+            </li>
+            <li class=aboutus>
+              <a href="about_us.html" style="text-decoration:none;">關於我們</a>
+            </li>
+            <li class=serverce>
+              <a href="" style="text-decoration:none;">客服支援</a>
+            </li>
+            <li class=login>
+              <a href="acount.html" style="text-decoration:none;">登入</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container" id="container">
+        <div class="front_item">
+          <a href="home.html"><img src="../images/logo_3.png"></a>
+          <ul>
+            <li class=store>
+              <a href="store.html" style="text-decoration:none;">商店</a>
+            </li>
+            <li class=news>
+              <a href="news.html" style="text-decoration:none;">最新消息</a>
+            </li>
+            <li class=talkplace>
+              <a href="" style="text-decoration:none;">討論區</a>
+            </li>
+            <li class=aboutus>
+              <a href="about_us.html" style="text-decoration:none;">關於我們</a>
+            </li>
+            <li class=serverce>
+              <a href="" style="text-decoration:none;">客服支援</a>
+            </li>
+            <li class=login>
+              <a href="acount.html" style="text-decoration:none;">登入</a>
+            </li>
+          </ul>
+        </div>
+        <div class="behind_item">
+          <div class="search">
+            <img src="../images/icon_search.png">
+            <input type="text" placeholder=" 請輸入要搜尋的遊戲......" >
+          </div>
+          <div class="shopping_car">
+            <a><img src="../images/icon_soppingcar.png"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slidershow">
+      <div class="slides">
+        <!-- <div class=slide_f>
+          <a><img src="../images/item_fallguys.png"></a>
+        </div> -->
+        <div class=slide_1>
+          <a><img src="../images/item_cyber.png"></a>
+        </div>
+        <div class=slide_2>
+          <a><img src="../images/item_apex.png"></a>
+        </div>
+        <div class=slide_3>
+          <a><img src="../images/item_fallguys.png"></a>
+        </div>
+        <!-- <div class=slide_b>
+          <a><img src="../images/item_cyber.png"></a>
+        </div> -->
+      </div>
+    </div>
+    <div class="radio">
+      <div class="radios">
+        <label for="r1" class="Adv_bar"></label>
+        <label for="r2" class="Adv_bar"></label>
+        <label for="r3" class="Adv_bar"></label>
+      </div>
+
+    </div>
+    <div class="item_sell">
+      <div class="hotsell">
+        <div class="title_hotsell">
+          熱銷商品
+        </div>
+        <div class="item_hotsell">
+          <div class="item_sell">
+            <div class="gm_img">
+              <a href="product.html"><img src="../images/item_mincraft.png"></a>
+            </div>
+            <div class="item_text">
+              <div class="title"><span>當個創世神</span></div>
+              <div class="price"><span>NT 790</span></div></a>
+            </div>
+          </div>
+          <div class="item_sell">
+            <div class="gm_img">
+              <a href=""><img src="../images/item_iceborn.png"></a>
+            </div>
+            <div class="item_text">
+              <div class="title"><span>魔物獵人:Iceborn</span></div>
+              <div class="price"><span>NT 1290</span></div>
+            </div>
+          </div>
+          <div class="item_sell">
+            <div class="gm_img">
+              <a href=""><img src="../images/item_devotion.png"></a>
+            </div>
+            <div class="item_text">
+              <div class="title"><span>還願</span></div>
+              <div class="price"><span>NT 430</span></div></a>
+            </div>
+          </div>
+          <div class="item_sell">
+            <div class="gm_img">
+              <a href=""><img src="../images/item_amonus.png"></a>
+            </div>
+            <div class="item_text">
+              <div class="title"><span>Among Us</span></div>
+              <div class="price"><span>NT 290</span></div></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="specialsell">
+        <div class="title_specialsell">
+          <a>特價商品</a>
+        </div>
+        <div class="item_specialsell">
+          <div class="bigitem_specialsell">
+            <a href="#"><img src="../images/xmas_sell.png"></a>
+          </div>
+          <div class="smellitem_specialsell">
+            <div class="item_specialsel">
+              <div class="sp_img">
+                <img src="../images/item_FOA.png">
+              </div>
+              <div class="item_text">
+                <div class="title"><span>動物之鬥</span></div>
+                <div class="discount"><span>-10%</span></div>
+                <div class="o_price"><del>NT 288</del></div>
+                <div class="price"><span>NT 259</span></div>
+              </div>
+            </div>
+            <a href="#"><div class="item_specialsel">
+              <div class="sp_img">
+                <img src="../images/item_skiro.png">
+              </div>
+              <div class="item_text">
+                <div class="title"><span>隻狼</span></div>
+                <div class="discount"><span>-40%</span></div>
+                <div class="o_price"><del>NT 1590</del></div>
+                <div class="price"><span>NT 895</span></div>
+              </div>
+            </div></a>
+            <a href="#"><div class="item_specialsel">
+              <div class="sp_img">
+                <img src="../images/item_fallguys_s.png">
+              </div>
+              <div class="item_text">
+                <div class="title"><span>糖豆人:終極大冒險</span></div>
+                <div class="discount"><span>-20%</span></div>
+                <div class="o_price"><del>NT 318</del></div>
+                <div class="price"><span>NT 254</span></div>
+              </div>
+            </div></a>
+            <a href="#"><div class="item_specialsel">
+              <div class="sp_img">
+                <img src="../images/item_deathstranding.png">
+              </div>
+              <div class="item_text">
+                <div class="title"><span>死亡擱淺</span></div>
+                <div class="discount"><span>-50%</span></div>
+                <div class="o_price"><del>NT 1790</del></div>
+                <div class="price"><span>NT 895</span></div>
+              </div>
+            </div></a>
+          </div>
+          <div class="bottom_specialsell">
+          </div>
+        </div>
+      </div>
+      <div class="advice_game">
+        <div class="title_advice_game">
+          <a style="font-family:Microsoft JhengHei;">本日推薦遊戲
+          </a>
+        </div>
+        <div class=item_advice_game>
+          <div class="img_advice_game">
+          </div>
+          <div class="text_advice_game">
+            <a class="title">黑暗靈魂</a>
+            <a class="text">
+              "  當火漸熄，世界趨於毀滅，您將再踏上面臨更多磨難、大量敵人與難關的旅途。
+              玩家將沉浸在史詩氛圍的世界之中，感受更快速的遊玩節奏與棘手的戰鬥強度帶
+              來的黑暗氣息。不論新手或是老玩家，都將因著名的遊戲體驗、實境般的遊戲畫
+              面為之著迷。如今僅剩餘火尚存……作好準備，再次擁抱黑暗。"
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="good_game">
+        <div class="title_good_game">
+          <a>好評遊戲</a>
+        </div>
+        <!-- <div class="owl-carousel owl-theme"> -->
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="gg_img">
+              <img src="../images/item_iceborn.png">
+            </div>
+            <div class="gg_text">
+              <div class="title"><span>魔物獵人:Iceborn</span></div>
+              <div class="score"><span>評分: 4.5/5 分</span></div>
+              <div class="price"><span>NT 1290</span></div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="gg_img">
+              <img src="../images/item_left4.png">
+            </div>
+            <div class="gg_text">
+              <div class="title"><span>惡靈勢力2</span></div>
+              <div class="score"><span>評分: 4.5/5 分</span></div>
+              <div class="price"><span>NT 99</span></div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="gg_img">
+              <img src="../images/item_mincraft.png">
+            </div>
+            <div class="gg_text">
+              <div class="title"><span>當個創世神</span></div>
+              <div class="score"><span>評分: 4.3/5 分</span></div>
+              <div class="price"><span>NT 790</span></div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="gg_img">
+              <img src="../images/item_detention.png">
+            </div>
+            <div class="gg_text">
+              <div class="title"><span>返校</span></div>
+              <div class="score"><span>評分: 4.6/5 分</span></div>
+              <div class="price"><span>NT 99</span></div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="gg_img">
+              <img src="../images/item_dontstarve.png">
+            </div>
+            <div class="gg_text">
+              <div class="title"><span>Don't starve</span></div>
+              <div class="score"><span>評分: 4.4/5 分</span></div>
+              <div class="price"><span>NT 430</span></div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="gg_img">
+              <img src="../images/item_dota2.png">
+            </div>
+            <div class="gg_text">
+              <div class="title"><span>DOTA 2</span></div>
+              <div class="score"><span>評分: 4.5/5 分</span></div>
+              <div class="price"><span>NT free</span></div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="gg_img">
+              <img src="../images/item_jedi.png">
+            </div>
+            <div class="gg_text">
+              <div class="title"><span>絕地：組織殞落</span></div>
+              <div class="score"><span>評分: 4.3/5 分</span></div>
+              <div class="price"><span>NT 990</span></div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="gg_img">
+              <img src="../images/item_devilcry.png">
+            </div>
+            <div class="gg_text">
+              <div class="title"><span>Devil May Cry 5</span></div>
+              <div class="score"><span>評分: 4.2/5 分</span></div>
+              <div class="price"><span>NT 740</span></div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="gg_img">
+              <img src="../images/item_redsend.png">
+            </div>
+            <div class="gg_text">
+              <div class="title"><span>璧血狂殺 2</span></div>
+              <div class="score"><span>評分: 4.2/5 分</span></div>
+              <div class="price"><span>NT 1190</span></div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="gg_img">
+              <img src="../images/item_amonus.png">
+            </div>
+            <div class="gg_text">
+              <div class="title"><span>Among Us</span></div>
+              <div class="score"><span>評分: 4.1/5 分</span></div>
+              <div class="price"><span>NT 290</span></div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="gg_img">
+              <img src="../images/item_borderlands3.png">
+            </div>
+            <div class="gg_text">
+              <div class="title"><span>邊緣禁地 3</span></div>
+              <div class="score"><span>評分: 4.3/5 分</span></div>
+              <div class="price"><span>NT 1490</span></div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="gg_img">
+              <img src="../images/item_devotion.png">
+            </div>
+            <div class="gg_text">
+              <div class="title"><span>還願</span></div>
+              <div class="score"><span>評分: 4.6/5 分</span></div>
+              <div class="price"><span>NT 430</span></div>
+            </div>  
+          </div>
+
+        </div>
+      </div>
+      <div class="empty">
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer_area">
+        <div class="logo">
+          <img src="../images/logo_3.png">
+        </div>
+        <div class="text_all">
+          <div class="text_1">
+            <a>工作機會 | 關於客服支援 | 聯繫我們 | 媒體報導</a>
+          </div>
+          <div class="text_2">
+            <div class=text_2_in>
+              <span class="row_1">©2020 台商傳送門股份有限公司（portal games, INC.）版權所有。</span>
+              <span class="row_2">在此提及的所有商標是其各自所有人的財產。</span>
+              <span class="row_3">隱私 | 法律聲明 | 條款 | COOKIES</span>
+            </div>
+          </div>
+        </div>  
+        <div class="lang">
+          <div class="title_lang">
+            Language:
+          </div>
+          <div class="choose_lang">
+             繁體中文
+          </div>
+        </div>
+      <div>
+
+
+    </div>
+
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true, // 循環播放
+        margin: 1, // 外距 10px
+        nav: true, // 顯示點點
+        autoplay:true,
+        autoplayTimeout:1000,
+        responsive: {
+          //  0: {
+          //     items: 1 // 螢幕大小為 0~600 顯示 1 個項目
+          //  },
+           100: {
+            nav: false, // 顯示點點
+             items: 2 // 螢幕大小為 600~1000 顯示 3 個項目
+           },
+           767: {
+             items: 3// 螢幕大小為 600~1000 顯示 3 個項目
+           },
+          1000: {
+            items: 4 // 螢幕大小為 1000 以上 顯示 5 個項目
+          }
+        }
+        });
+    </script>
+</body>
+</html>

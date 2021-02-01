@@ -1,0 +1,771 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+body{
+  background-image:url("../images/papyrus-dark.png");
+}
+.item_sell .empty{
+  height: 80px;
+}
+/*----------------------*/
+@media screen and (min-width:1200px){
+  body{
+    width: 100%;
+  }
+}
+
+
+/*----------------------選單欄位--------------------------- */
+.container{
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+.top_list {
+  z-index:9999;
+  /* position: fixed;
+  z-index:9999; */
+  /* background: url(../images/toplist_backgroud_2.png);
+  background-size: cover; */
+  background-color: rgb(30,30,30,0.95);
+  width: 100%;
+}
+.background img{
+  width: 100%;
+  height: 50px;
+}
+.top_list .container {
+  /* border: 1px solid green; */
+  /* display: flex; */
+  /* width: 100%; */
+  align-items:center;
+}
+
+.container img{
+  /* border: 1px solid blue; */
+  width: 140px;
+  height: 46px;
+  vertical-align: middle;
+}
+.front_item{
+  margin-top: 2px;
+  margin-right: 50px;
+}
+.front_item .store a{
+  color: aqua;
+}
+@media screen and (min-width:768px){
+  .container ul{
+    /* border: 1px solid green; */
+    margin: 0px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .container ul li{
+    display: inline-block;
+  }
+  .container ul li a{
+    color: white;
+    font-size:18px;
+    margin-left: 25px;
+    font-weight:bold;
+  }
+}
+.container ul li a:hover{
+  color: rgba(54, 178, 255,1) !important;
+}
+
+/*----------------------選單欄位(rwd)--------------------------- */
+@media screen and (min-width:1200px){
+  .top_list{
+    width: 100%;
+  }
+  .top_list .container {
+    display: flex;
+    width: 1140px;
+  }
+  div.container {
+    justify-content: space-between;
+  }
+  #menuToggle{
+    display: none!important;
+  }
+}
+@media(max-width:1199.99px) and (min-width:992px){
+  #menuToggle{
+    display: none!important;
+  }
+ 
+  .top_list{
+    width: 100%;
+  }
+  .top_list .container {
+    text-align:center;
+  }
+  .front_item{
+    width: 700px;
+    display: inline-block;
+    /* margin-left: 10%; */
+  }
+  .behind_item{
+    width: 550px;
+    padding-bottom:10px;
+    display: inline-block;
+    margin-left: 20%;
+   
+  }
+}
+@media(max-width:991.99px) and (min-width:768px){
+  #menuToggle{
+    display: none;
+  }
+ 
+  .top_list{
+    width: 100%;
+  }
+  .top_list .container {
+    text-align:center;
+  }
+  .front_item{
+    width: 700px;
+    display: inline-block;
+    /* margin-left: 10%; */
+  }
+  .behind_item{
+    width: 550px;
+    padding-bottom:10px;
+    display: inline-block;
+    margin-left: 20%;
+   
+  }
+}
+@media(max-width:767.99px) and (min-width:100px){
+  #menuToggle .store a{
+    color: aqua!important;
+  }
+  #menuToggle .news a:hover{
+    
+    color: rgba(54, 178, 255,1)!important;
+  }
+  
+  .nav{
+    position: absolute;
+    left:20px;
+    margin-top: 10px;
+  
+  }
+
+  .bar{
+    width: 30px;
+    height: 4px;
+    margin-top: 4px;
+    background-color: rgb(255,255,255);
+  }
+  
+  .front_item li{
+    display: none;
+  }
+  /* .behind_item{
+    margin-right: -10%;
+  } */
+  .search{
+    padding: 10px 0px 7px 0px;
+  }
+}
+
+/*----------------------搜尋欄位--------------------------- */
+.behind_item{
+  display: flex;
+}
+.container .search{
+  vertical-align: middle;
+}
+.container .search img{
+  width: 25px;
+  height: 25px;
+  margin: 0px 10px 2px 0px;
+}
+.container .search input{
+  background-color: rgb(169, 169, 169, 0.5);
+  border-style:none;
+  outline: none;
+  width:300px;
+  height: 24px;
+  border-radius: 4px;
+  font-size:16px;
+  color: #fff;
+  text-align: left;
+  padding-left: 10px;
+}
+.container .search input::-webkit-input-placeholder {
+  color: #b9b9b9;
+  text-align: left;
+}
+.shopping_car img{
+  margin-top:-5px;
+}
+/*----------------------搜尋欄位(rwd)--------------------------- */
+
+/*----------------------購物車欄位--------------------------- */
+.container .shopping_car{
+  cursor: pointer;
+  margin: 5px 10px 0px 20px;
+}
+.container .shopping_car img{
+  width: 35px;
+  height: 25px;
+  margin-bottom: 5px;
+}
+.container .shopping_car img:hover{
+  /* margin-left: -7px;
+  padding: 0px;
+  width: 42px;
+  height: 30px; */
+  transform:scale(1.1,1.1);
+}
+/*---------------------商品圖片-----------------------------*/
+.product_mid{
+  width: 1200px;
+  margin: auto;
+  background-color:	rgb(20,20,20,0.6);
+}
+.product_image{
+  position: relative;
+  /* background-color:	rgb(20,20,20,0.6); */
+  margin: auto;
+  width: 1200px;
+  /* height: 500px;
+  overflow: hidden; */
+}
+.product_image_big img{
+  width: 1140px;
+  transition: all 0.3s;
+}
+.product_image_list{
+  text-align: left;
+  padding-left: 15px;
+  margin:10px;
+  width:1200px;
+  font-size: 42px;
+  color: #D8D8D8;
+}
+
+.product_image_price{
+  position: absolute;
+  border-radius: 5px;
+  background-image: url(../images/price_sm.PNG);
+  background-size: cover;
+  /* top:480px; */
+  right:40px;
+  width: 200px;
+  height: 50px;
+  color: white;
+  font-size: 32px;
+  text-align: left;
+  padding: 7px 0px 0px 20px;
+  margin-top: -20px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.product_image_price:hover{
+  transform:scale(1.03,1.03);
+}
+.product_image_small{
+  border: 1px solid green;
+  width: 1140px;
+  overflow: hidden;
+  margin: auto;
+}
+.product_image_small .item{
+  border: 1px solid red;
+  height: 148px;
+  overflow: hidden;
+}
+.product_image_small img{
+  object-fit: cover;
+  cursor: pointer;
+}
+.product_image_small img:hover{
+  transform:scale(1.03,1.03);
+}
+/*---------------------商品圖片(rwd)-----------------------------*/
+@media (max-width:1199px) and (min-width:992px){
+  .product_mid{
+    width: 100%;
+  }
+  .product_image{
+    width: 100%;
+  }
+  .product_image_big img{
+    width: 100%;
+  }
+  .product_image_small{
+    width: 96%;
+    height: 180px;
+    overflow: hidden;
+  }
+  .product_image_small img{
+    height: 100%;
+    /* height: 180px; */
+  }
+} 
+@media (max-width:991.9px) and (min-width:768px){
+  .product_mid{
+    width: 100%;
+  }
+  .product_image{
+    width: 100%;
+  }
+  .product_image_big img{
+    width: 100%;
+  }
+  .product_image_small{
+    width: 96%;
+    height: 140px;
+    overflow: hidden;
+  }
+  .product_image_small img{
+    /* height: 140px; */
+    height: 100%;
+  }
+  .product_image_price{
+    width: 160px;
+    height: 40px;
+    font-size: 28px;
+  }
+} 
+@media (max-width:767.99px) and (min-width:100px){
+  .product_mid{
+    width: 100%;
+  }
+  .product_image{
+    width: 100%;
+  }
+  .product_image_big img{
+    width: 100%;
+  }
+  .product_image_small{
+    width: 96%;
+    height: 140px;
+    overflow: hidden;
+  }
+  .product_image_small img{
+    /* height: 140px; */
+    height: 100%;
+  }
+  .product_image_price{
+    width: 140px;
+    height: 35px;
+    font-size: 24px;
+    background-position: center;
+  }
+  .product_image_price a{
+    position: absolute;
+    top:5px;
+  }
+} 
+
+
+/*---------------------選單-----------------------------*/
+.product_list{
+  position: relative;
+  width: 1200px;
+  background-color:	#383838;
+  display: flex;
+  margin: auto;
+  margin-top: 30px;
+}
+.product_list .imgvdeo{
+  border-left: 1px solid rgb(100,100,100,0.7);
+}
+.product_list div{
+  border-right: 1px solid rgb(100,100,100,0.7);
+  font-size: 18px;
+  padding: 5px 20px 5px 20px;
+  margin: 5px 0px 5px 0px;
+  color:#D8D8D8;
+}
+.product_list div:hover{
+  cursor: pointer;
+  background-color: rgba(80,80,80,0.7);
+  color: rgba(54, 178, 255,1) ;
+}
+/*---------------------選單(rwd)-----------------------------*/
+@media (max-width:1199px) and (min-width:100px){
+  .product_list{
+    width: 100%;
+  }
+}
+@media (max-width:605px) and (min-width:100px){
+  .product_list a{
+    font-size: 13px;
+    font-weight: bold;
+  }
+}
+/*---------------------遊戲介紹-----------------------------*/
+.product_mid{
+  overflow: hidden;
+}
+.game_information{
+  margin: auto;
+  width: 1200px;
+}
+.game_information .introduce{
+  margin-top: 30px;
+  border-bottom: 1px solid rgb(100,100,100,0.7);
+}
+.game_information .int1{
+  display: flex;
+  font-size: 28px;
+  color: rgb(0,255,255,0.6);
+  margin-bottom: 10px;
+}
+.game_information .int1 a{
+  padding-left: 20px;
+  width: 600px;
+}
+.game_information .int1_img{
+  width: 500px;
+  
+  /* margin-bottom: 40px; */
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.game_information .int1_img img{
+  width: 100%;
+}
+/*---------------------遊戲介紹(rwd)-----------------------------*/
+@media (max-width:1199px) and (min-width:992px){
+  .game_information{
+    width: 100%;
+  }
+  .game_information .int1 a{
+    font-size: 24px;
+    width: 58%;
+  }
+  .game_information .int1_img{
+    width: 40%;
+  }
+
+}
+@media (max-width:991px) and (min-width:768px){
+  .game_information{
+    width: 100%;
+  }
+
+  .game_information .int1 a{
+    font-size: 20px;
+    width: 58%;
+  }
+  .game_information .int1_img{
+    width: 40%;
+  }
+
+}
+@media (max-width:767px) and (min-width:100px){
+  .game_information{
+    width: 100%;
+  }
+  .game_information .int1{
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .game_information .int1 a{
+    font-size: 20px;
+    width: 58%;
+  }
+  .game_information .int1_img{
+    width: 100%;
+  }
+
+}
+
+/*---------------------相關資料----------------------------*/
+.game_information .data{
+  border-bottom: 1px solid rgb(100,100,100,0.7);
+}
+.game_information .text{
+  font-size: 20px;
+  color: #C0C0C0;
+  margin: 20px 0px 20px 50px;
+}
+.game_information .title{
+  text-align: left;
+  font-size: 24px;
+  color: #D8D8D8;
+}
+.game_information .text td{
+  text-align: left;
+  padding-top: 10px;
+}
+/*---------------------相關資料(rwd)----------------------------*/
+@media (max-width:810px) and (min-width:630px){
+  .game_information .require td,.game_information .data td{
+    font-size: 15px;
+  }
+  .game_information .title,.game_information .require .title_1{
+    font-size: 20px!important;
+    color: rgb(23, 144, 201)!important;
+    font-weight: bold;
+  }
+  .game_information .require .title_2{
+    font-size: 14px!important;
+    font-weight: bold;
+  }
+}
+@media (max-width:629px) and (min-width:400px){
+  .game_information .require td,.game_information .data td{
+    font-size: 12px;
+  }
+  .game_information .title,.game_information .require .title_1{
+    font-size: 20px!important;
+    color: rgb(23, 144, 201)!important;
+    font-weight: bold;
+  }
+  .game_information .require .title_2{
+    font-size: 14px!important;
+    font-weight: bold;
+  }
+  
+}
+/*---------------------系統需求----------------------------*/
+.game_information .require{
+  /* border: 1px solid red; */
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgb(100,100,100,0.7);
+  /* display: flex; */
+}
+.game_information .require .title_1{
+  text-align: left;
+  width:1200px;
+  margin-left: 50px;
+  font-size: 24px;
+  color: #D8D8D8;
+}
+.game_information .require .title_2{
+  text-align: left;
+  width:1200px;
+  font-size: 20px;
+  color:  #C0C0C0;
+}
+.game_information .require .basic{
+  width: 750px;
+  font-size: 20px;
+  color: #C0C0C0;
+  margin-top: 30px;
+  margin-left: 50px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgb(100,100,100,0.7);
+}
+.game_information .require .sugest{
+  width: 750px;
+  font-size: 20px;
+  margin-left: 50px;
+  color: #C0C0C0;
+  margin-top: 30px;
+}
+.game_information .require td{
+  text-align: left;
+  padding-top: 10px;
+}
+/*---------------------系統需求(rwd)----------------------------*/
+@media (max-width:1200px) and (min-width:100px){
+  .game_information .require .title_1{
+    width: 100%;
+  }
+  .game_information .require .title_2{
+    width: 100%;
+  }
+  .game_information .require .basic{
+    width:90%;
+  }
+  .game_information .require .sugest{
+    width: 90%;
+  }
+}
+/*---------------------推薦遊戲----------------------------*/
+.sugest_game{
+}
+.title_sugest_game{
+  /* border: 1px solid green; */
+  width: 100px;
+  margin: 30px 5px 10px 50px;
+  font-size: 24px;
+  color: #D8D8D8;
+}
+.sugest_game .item{
+  width: 280px;
+  height: 280px;
+  align-items: center;
+  margin: auto;
+  color: white;
+  font-size: 18px;
+  font-weight:bold;
+  /* background-image:url("../images/commodity_back2.png"); */
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("../images/commodity_back2.png");
+  background-size: cover;
+  position: relative;
+}
+.sugest_game .item img{
+  width: 280px;
+  height: 188px;
+}
+.sugest_game .item .title{
+  margin-top: 10px;
+}
+.sugest_game .item .price{
+  border-radius: 5px;
+  overflow: hidden;
+  width: 110px;
+  height: 32px;
+  background-image:url(../images/price_sm.PNG);
+  background-size: cover;
+  position: absolute;
+  bottom: 12px;
+  left: 160px;
+}
+.sugest_game .item .price a{
+  position: absolute;
+  bottom: 5px;
+  left: 12px;
+}
+.sugest_game .item .score a{
+  position: absolute;
+  color: #00FFFF;
+  font-size:18px;
+  bottom:15px;
+  left:28px;
+}
+.empty{
+  width: 99%;
+  height: 50px;
+}
+
+/*-----------------------footer-----------------------*/
+.footer{
+  /* border: 1px solid red; */
+  width: 100%;
+  margin: auto;
+  height: 280px;
+  /* background-image: url(../images/toplist_backgroud_2.png);
+  background-size: cover; */
+  background-color: rgb(30,30,30,0.9);
+}
+.footer .footer_area{
+  /* border: 1px solid green; */
+  position: relative;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+}
+.footer .logo img{
+  width: 200px;
+  height: 66px;
+  margin-top:20px;
+}
+
+.footer .text_1{
+
+  margin: 20px 0px 20px 0px;
+  font-size: 18px;
+  color: #B8B8B8;
+}
+.footer .text_2{
+  font-size: 18px;
+  color: #B8B8B8;
+}
+.footer .text_2 span{
+  display:block;
+  margin: 2px;
+}
+.footer .lang{
+  display: flex;
+  position: absolute;
+  top:40px;
+  right:50px;
+  color: #B8B8B8;
+}
+.footer .lang .title_lang{
+  font-size: 24px;
+}
+.footer .lang .choose_lang{
+  border: 2px solid #D8D8D8;
+  border-radius: 8px;
+  width: 110px;
+  margin-left: 5px;
+  color: 	#D8D8D8;
+  background-color: #808080;
+  font-size: 20px;
+}
+/*-----------------------footer(rwd)-----------------------*/
+@media (max-width:991px) and (min-width:100px){
+  .footer .logo {
+    text-align: left!important;
+    margin-left: 2%;
+  }
+  .footer .text_1{
+    /* width: 420px; */
+    width: 96%;
+    border-bottom: 1.5px solid rgb(100,100,100,0.8);
+    border-top: 1.5px solid rgb(100,100,100,0.8);
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    text-align: left!important;
+    margin-left: 2%;
+    /* margin-left: 2%; */
+  }
+  .footer .text_1 a{
+    /* margin-left: -22%; */
+  } 
+  .footer .text_2{
+    width: 96%;
+    /* text-align: left; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1.5px solid rgb(100,100,100,0.8);
+    margin-left: 2%;
+  }
+  .footer .text_2_in{
+    /* margin-left: 19%; */
+    width: 96%;
+  
+  }
+  .footer .text_2 .row_1{
+    text-align: left!important;
+    /* margin-left: -4%; */
+    /* border:1px solid red; */
+  }
+  .footer .text_2 .row_2{
+    text-align: left!important;
+    /* margin-left: -22%; */
+    /* border:1px solid red; */
+  }
+  .footer .text_2 .row_3{
+    text-align: left!important;
+    /* margin-left: -33%; */
+    /* border:1px solid red; */
+  }
+  .footer .lang{
+    right:20px;
+  }
+}
+@media (max-width:600px) and (min-width:100px){
+
+  
+  .footer .text_1{
+    font-size: 15px;
+  }
+  .footer .text_2{
+    font-size: 15px;
+  }
+
+}

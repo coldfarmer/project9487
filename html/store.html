@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <title>Portal.com</title>
+    <link href="../css/store.css" rel="stylesheet">
+
+    <!-- owl.carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"></link>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- my -->
+    <script src=../js/flitter.js></script>
+    <script src="../js/staytop.js"></script>
+    <link href="../css/hamber.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="top_list" id="top_list">
+      <nav role="navigation">
+        <div id="menuToggle">
+          <!--
+          A fake / hidden checkbox is used as click reciever,
+          so you can use the :checked selector on it.
+          -->
+          <input type="checkbox" />
+          
+          <!--
+          Some spans to act as a hamburger.
+          
+          They are acting like a real hamburger,
+          not that McDonalds stuff.
+          -->
+          <span></span>
+          <span></span>
+          <span></span>
+          
+          <!--
+          Too bad the menu has to be inside of the button
+          but hey, it's pure CSS magic.
+          -->
+          <ul id="menu">
+            <li class=store>
+              <a href="store.html" style="text-decoration:none;">商店</a>
+            </li>
+            <li class=news>
+              <a href="news.html" style="text-decoration:none;">最新消息</a>
+            </li>
+            <li class=talkplace>
+              <a href="" style="text-decoration:none;">討論區</a>
+            </li>
+            <li class=aboutus>
+              <a href="about_us.html" style="text-decoration:none;">關於我們</a>
+            </li>
+            <li class=serverce>
+              <a href="" style="text-decoration:none;">客服支援</a>
+            </li>
+            <li class=login>
+              <a href="acount.html" style="text-decoration:none;">登入</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container" id="container">
+        <div class="front_item">
+          <a href="home.html"><img src="../images/logo_3.png"></a>
+          <ul>
+            <li class=store>
+              <a href="store.html" style="text-decoration:none;">商店</a>
+            </li>
+            <li class=news>
+              <a href="news.html" style="text-decoration:none;">最新消息</a>
+            </li>
+            <li class=talkplace>
+              <a href="" style="text-decoration:none;">討論區</a>
+            </li>
+            <li class=aboutus>
+              <a href="about_us.html" style="text-decoration:none;">關於我們</a>
+            </li>
+            <li class=serverce>
+              <a href="" style="text-decoration:none;">客服支援</a>
+            </li>
+            <li class=login>
+              <a href="acount.html" style="text-decoration:none;">登入</a>
+            </li>
+          </ul>
+        </div>
+        <div class="behind_item">
+          <div class="search">
+            <img src="../images/icon_search.png">
+            <input type="text" placeholder=" 請輸入要搜尋的遊戲......" >
+          </div>
+          <div class="shopping_car">
+            <a><img src="../images/icon_soppingcar.png"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="game_search">
+      <!-- <div class="game_search_style">
+        <a>遊戲類型</a>
+      </div> -->
+      <div class="game_search_search">
+        <div class="icon">
+          <img src="../images/icon_search.png">
+        </div>
+        <div class="search">
+          <input type="text" placeholder=" 請輸入要搜尋的遊戲......" >
+        </div>
+      </div>
+    </div>
+    <div class="store_menu">
+      <div class="store_menu_games">
+        <div class="menu_text">
+          <div class="flitter" id="flliter_i">
+            <img src="../images/flitter_2.png">
+            <span>篩選</span>
+          </div>
+          <div class="store_newgames gameact">
+            最新遊戲
+          </div>
+          <div class="store_hotsell">
+            熱銷遊戲
+          </div>
+          <div class="store_spcialsell">
+            特價遊戲
+          </div>
+        </div> 
+      </div>
+      <div class="store_icon">
+        <img src="../images/icon-block.png" class='icatc1'>
+        <img src="../images/icon-rows.png">
+        <img src="../images/icon-block.png" class="ic768">
+      </div>
+    </div>
+    <div class="store_sellitem">
+      <div class="flitter">
+       <div class="flitter_price">
+        <form>
+          <a class="title">價格區間</a><br>
+          <label><input type="checkbox" value="1" name="price_check"><a class="text"> NT 100 以下</a></label><br>
+          <label><input type="checkbox" value="2" name="price_check"><a class="text"> NT 100 ~ 300</a></label><br>
+          <label><input type="checkbox" value="3" name="price_check"><a class="text"> NT 300 ~ 500</a></label><br>
+          <label><input type="checkbox" value="5" name="price_check"><a class="text"> NT 500 ~ 700</a></label><br>
+          <label><input type="checkbox" value="6" name="price_check"><a class="text"> NT 700 ~ 900</a></label><br>
+          <label><input type="checkbox" value="7" name="price_check"><a class="text"> NT 1000 以上</a></label><br>
+        </form>
+       </div>
+       <div class="flitter_system">
+         <form>
+           <a class="title">系統</a><br>
+           <label><input type="checkbox" value="1" name="system"><a class="text"> Windows</a></label><br>
+           <label><input type="checkbox" value="2" name="system"><a class="text"> OSX</a></label><br>
+           <label><input type="checkbox" value="3" name="system"><a class="text"> Linux</a></label><br>
+         </form>
+       </div>
+       <div class="flitter_features">
+        <form>
+          <a class="title">類型</a><br>
+          <label><input type="checkbox" value="1" name="type"><a class="text"> 單人遊戲</a></label><br>
+          <label><input type="checkbox" value="2" name="type"><a class="text"> 多人遊戲</a></label><br>
+          <label><input type="checkbox" value="3" name="type"><a class="text"> 合作遊戲</a></label><br>
+        </form>
+       </div>
+       <div class="flitter_lang">
+        <form>
+          <a class="title">語言</a><br>
+          <label><input type="checkbox" value="1" name="lang"><a class="text"> 繁體中文 </a></label><br>
+          <label><input type="checkbox" value="2" name="lang"><a class="text"> English </a></label><br>
+          <label><input type="checkbox" value="3" name="lang"><a class="text"> 日本語 </a></label><br>
+          <label><input type="checkbox" value="2" name="lang"><a class="text"> 한국어 </a></label><br>
+          <label><input type="checkbox" value="3" name="lang"><a class="text"> italiano </a></label><br>
+        </form>
+       </div>
+      </div>
+      <div class="table_item_newgames">
+        <div class="item_sell">
+          <div class="gm_img">
+            <a href="product.html"><img src="../images/item_mincraft.png"></a>
+          </div>
+          <div class="item_text">
+            <div class="title"><span>當個創世神</span></div>
+            <div class="price"><span>NT 790</span></div></a>
+          </div>
+        </div>
+        <div class="item_sell">
+          <div class="gm_img">
+            <a href="product.html"><img src="../images/item_mincraft.png"></a>
+          </div>
+          <div class="item_text">
+            <div class="title"><span>當個創世神</span></div>
+            <div class="price"><span>NT 790</span></div></a>
+          </div>
+        </div>
+        <div class="item_sell">
+          <div class="gm_img">
+            <a href="product.html"><img src="../images/item_mincraft.png"></a>
+          </div>
+          <div class="item_text">
+            <div class="title"><span>當個創世神</span></div>
+            <div class="price"><span>NT 790</span></div></a>
+          </div>
+        </div>
+        <div class="item_sell">
+          <div class="gm_img">
+            <a href="product.html"><img src="../images/item_mincraft.png"></a>
+          </div>
+          <div class="item_text">
+            <div class="title"><span>當個創世神</span></div>
+            <div class="price"><span>NT 790</span></div></a>
+          </div>
+        </div>
+        <div class="item_sell">
+          <div class="gm_img">
+            <a href="product.html"><img src="../images/item_mincraft.png"></a>
+          </div>
+          <div class="item_text">
+            <div class="title"><span>當個創世神</span></div>
+            <div class="price"><span>NT 790</span></div></a>
+          </div>
+        </div>
+        <div class="item_sell">
+          <div class="gm_img">
+            <a href="product.html"><img src="../images/item_mincraft.png"></a>
+          </div>
+          <div class="item_text">
+            <div class="title"><span>當個創世神</span></div>
+            <div class="price"><span>NT 790</span></div></a>
+          </div>
+        </div>
+        <div class="item_sell">
+          <div class="gm_img">
+            <a href="product.html"><img src="../images/item_mincraft.png"></a>
+          </div>
+          <div class="item_text">
+            <div class="title"><span>當個創世神</span></div>
+            <div class="price"><span>NT 790</span></div></a>
+          </div>
+        </div>
+        <div class="item_sell">
+          <div class="gm_img">
+            <a href="product.html"><img src="../images/item_mincraft.png"></a>
+          </div>
+          <div class="item_text">
+            <div class="title"><span>當個創世神</span></div>
+            <div class="price"><span>NT 790</span></div></a>
+          </div>
+        </div>
+        <div class="item_sell">
+          <div class="gm_img">
+            <a href="product.html"><img src="../images/item_mincraft.png"></a>
+          </div>
+          <div class="item_text">
+            <div class="title"><span>當個創世神</span></div>
+            <div class="price"><span>NT 790</span></div></a>
+          </div>
+        </div>
+        <div class="item_sell">
+          <div class="gm_img">
+            <a href="product.html"><img src="../images/item_mincraft.png"></a>
+          </div>
+          <div class="item_text">
+            <div class="title"><span>當個創世神</span></div>
+            <div class="price"><span>NT 790</span></div></a>
+          </div>
+        </div>
+        <div class="item_sell">
+          <div class="gm_img">
+            <a href="product.html"><img src="../images/item_mincraft.png"></a>
+          </div>
+          <div class="item_text">
+            <div class="title"><span>當個創世神</span></div>
+            <div class="price"><span>NT 790</span></div></a>
+          </div>
+        </div>
+        <div class="item_sell">
+          <div class="gm_img">
+            <a href="product.html"><img src="../images/item_mincraft.png"></a>
+          </div>
+          <div class="item_text">
+            <div class="title"><span>當個創世神</span></div>
+            <div class="price"><span>NT 790</span></div></a>
+          </div>
+        </div>
+        <div class="item_sell">
+          <div class="gm_img">
+            <a href="product.html"><img src="../images/item_mincraft.png"></a>
+          </div>
+          <div class="item_text">
+            <div class="title"><span>當個創世神</span></div>
+            <div class="price"><span>NT 790</span></div></a>
+          </div>
+        </div>
+        <div class="item_sell">
+          <div class="gm_img">
+            <a href="product.html"><img src="../images/item_mincraft.png"></a>
+          </div>
+          <div class="item_text">
+            <div class="title"><span>當個創世神</span></div>
+            <div class="price"><span>NT 790</span></div></a>
+          </div>
+        </div>
+        <div class="item_sell">
+          <div class="gm_img">
+            <a href="product.html"><img src="../images/item_mincraft.png"></a>
+          </div>
+          <div class="item_text">
+            <div class="title"><span>當個創世神</span></div>
+            <div class="price"><span>NT 790</span></div></a>
+          </div>
+        </div>
+        <div class="item_sell">
+          <div class="gm_img">
+            <a href="product.html"><img src="../images/item_mincraft.png"></a>
+          </div>
+          <div class="item_text">
+            <div class="title"><span>當個創世神</span></div>
+            <div class="price"><span>NT 790</span></div></a>
+          </div>
+        </div>
+        <div class="item_sell">
+          <div class="gm_img">
+            <a href="product.html"><img src="../images/item_mincraft.png"></a>
+          </div>
+          <div class="item_text">
+            <div class="title"><span>當個創世神</span></div>
+            <div class="price"><span>NT 790</span></div></a>
+          </div>
+        </div>
+        <div class="item_sell">
+          <div class="gm_img">
+            <a href="product.html"><img src="../images/item_mincraft.png"></a>
+          </div>
+          <div class="item_text">
+            <div class="title"><span>當個創世神</span></div>
+            <div class="price"><span>NT 790</span></div></a>
+          </div>
+        </div>
+      </div>  
+    </div>
+    <div class="pagechage">
+      <ul class="pages">
+        <li><a href="#">«</a></li>
+        <li><a href="#" class='page_act'>1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li><a href="#">7</a></li>
+        <li><a href="#">»</a></li>
+     </ul>
+    </div> 
+    <div class="footer">
+      <div class="footer_area">
+        <div class="logo">
+          <img src="../images/logo_3.png">
+        </div>
+        <div class="text_all">
+          <div class="text_1">
+            <a>工作機會 | 關於客服支援 | 聯繫我們 | 媒體報導</a>
+          </div>
+          <div class="text_2">
+            <div class=text_2_in>
+              <span class="row_1">©2020 台商傳送門股份有限公司（portal games, INC.）版權所有。</span>
+              <span class="row_2">在此提及的所有商標是其各自所有人的財產。</span>
+              <span class="row_3">隱私 | 法律聲明 | 條款 | COOKIES</span>
+            </div>
+          </div>
+        </div>  
+        <div class="lang">
+          <div class="title_lang">
+            Language:
+          </div>
+          <div class="choose_lang">
+             繁體中文
+          </div>
+        </div>
+      <div>
+    </div>
+
+    <script>
+      $(document).ready(function(){
+
+        $("input[name=price_check]").click( function () {
+          var Selected = $(this).val();
+          
+          // $(this).prop("checked", false);
+          if($(this).prop("checked")){
+              // alert($(this).prop("checked"));
+              $("input[name=price_check]").each(function(){
+              if($(this).val() == Selected) {
+                $(this).prop("checked", true);
+              }else {
+                $(this).prop("checked", false);
+              }
+              });
+          }
+    
+        });
+
+        });
+    </script>
+  
+    <script  src="../js/change_table.js"></script>
+  </body>
+</html>
